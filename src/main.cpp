@@ -94,6 +94,6 @@ int main(int argc, const char** argv){
     std::wstring wout_img(len, L'\0');
     MultiByteToWideChar(CP_UTF8, 0, out_img.c_str(), -1, &wout_img[0], len);
     bitmap->Save(wout_img.c_str(), &jpgClsid, NULL);
-    GdiplusShutdown(gdiplusToken);
+    // GdiplusShutdown(gdiplusToken);
     return 0;
 }
